@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jzyq.dynamicdatasource.dao.TagMapDAO">
+
+	<select id="getTagMap" resultType="com.jzyq.dynamicdatasource.domain.TagMap">
+		select map_id,string_entity_id from tag_map order by map_id desc limit 0,10
+	</select>
+
+</mapper>
